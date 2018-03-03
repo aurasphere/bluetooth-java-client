@@ -1,4 +1,4 @@
-# bluetooth-java-client
+# Bluetooth Java Client
 Simple Bluetooth Java client based on the Bluecove library.
 
 This program can be used to perform the following operations:
