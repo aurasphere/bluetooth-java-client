@@ -67,7 +67,7 @@ public class DeviceDiscoveredLoggingCallback implements DiscoveryListener {
 	public void inquiryCompleted(int discType) {
 		// Logs the end of the device discovery.
 		System.out.println("Device discovery completed!");
-		
+
 		// Very basic synchronization mechanism.
 		synchronized (IrcBluetoothClient.class) {
 			IrcBluetoothClient.class.notify();

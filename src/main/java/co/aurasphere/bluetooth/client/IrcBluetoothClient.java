@@ -57,13 +57,13 @@ public class IrcBluetoothClient {
 	 * console.
 	 * 
 	 * @throws BluetoothStateException
-	 * @throws InterruptedException 
+	 * @throws InterruptedException
 	 */
 	private static void startDiscovery() throws BluetoothStateException, InterruptedException {
 		DiscoveryAgent agent = LocalDevice.getLocalDevice().getDiscoveryAgent();
 		System.out.println("Starting device discovery...");
 		agent.startInquiry(DiscoveryAgent.GIAC, new DeviceDiscoveredLoggingCallback());
-		
+
 		// Very basic synchronization mechanism.
 		synchronized (IrcBluetoothClient.class) {
 			IrcBluetoothClient.class.wait();
@@ -131,7 +131,7 @@ public class IrcBluetoothClient {
 	 * @param args
 	 *            an optional Bluetooth address to which connect
 	 * @throws IOException
-	 * @throws InterruptedException 
+	 * @throws InterruptedException
 	 */
 	public static void main(String[] args) throws IOException, InterruptedException {
 		// Prints some informations at startup about this device.
