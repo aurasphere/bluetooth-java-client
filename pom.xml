@@ -1,0 +1,40 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>co.aurasphere</groupId>
+	<artifactId>bluetooth-java-client</artifactId>
+	<version>1.0.0</version>
+	<name>Bluetooth Java Client</name>
+	<description>Simple Bluetooth Java client based on the Bluecove library.</description>
+
+	<dependencies>
+		<dependency>
+			<groupId>net.sf.bluecove</groupId>
+			<artifactId>bluecove</artifactId>
+			<version>2.1.1-SNAPSHOT</version>
+			<scope>system</scope>
+			<systemPath>${basedir}/src/main/resources/bluecove-2.1.1-SNAPSHOT.jar</systemPath>
+		</dependency>
+		<dependency>
+			<groupId>net.sf.bluecove</groupId>
+			<artifactId>bluecove-bluez</artifactId>
+			<version>2.1.1-SNAPSHOT</version>
+			<scope>system</scope>
+			<systemPath>${basedir}/src/main/resources/bluecove-bluez-2.1.1-SNAPSHOT.jar</systemPath>
+		</dependency>
+		<dependency>
+			<groupId>net.sf.bluecove</groupId>
+			<artifactId>bluecove-emu</artifactId>
+			<version>2.1.1-SNAPSHOT</version>
+			<scope>system</scope>
+			<systemPath>${basedir}/src/main/resources/bluecove-emu-2.1.1-SNAPSHOT.jar</systemPath>
+		</dependency>
+		<dependency>
+			<groupId>net.sf.bluecove</groupId>
+			<artifactId>bluecove-gpl</artifactId>
+			<version>2.1.1-SNAPSHOT</version>
+			<scope>system</scope>
+			<systemPath>${basedir}/src/main/resources/bluecove-gpl-2.1.1-SNAPSHOT.jar</systemPath>
+		</dependency>
+	</dependencies>
+</project>
